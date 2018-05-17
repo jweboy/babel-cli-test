@@ -1,0 +1,19 @@
+{
+  "name": "creams-web3-room",
+  "version": "1.0.0",
+  "description": "Room Module",
+  "main": "lib/index.js",
+  "scripts": {
+    "preinstall": "bash creams-web3-base/bin/creams.sh preinstall",
+    "build-api": "bash creams-web3-base/bin/creams.sh build-api",
+    "build": "bash creams-web3-base/bin/creams.sh build",
+    "start": "bash creams-web3-base/bin/creams.sh start",
+    "prod": "bash creams-web3-base/bin/creams.sh prod"
+  },
+  "keywords": [
+    "React"
+  ],
+  "author": "Souban web team",
+  "license": "ISC",
+  "devDependencies": {}
+}

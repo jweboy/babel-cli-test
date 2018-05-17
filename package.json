@@ -1,0 +1,28 @@
+{
+  "name": "creams-web3-room",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "ssh://git@git.souban.io:18822/Web/creams-web3-room.git",
+  "author": "jianglei <1259524459@qq.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.47",
+    "@babel/core": "^7.0.0-beta.47",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.47",
+    "@babel/preset-env": "^7.0.0-beta.47",
+    "@babel/preset-es2015": "^7.0.0-beta.47",
+    "@babel/preset-stage-0": "^7.0.0-beta.47",
+    "gulp": "^4.0.0",
+    "gulp-babel": "^8.0.0-beta.2",
+    "nodemon": "^1.17.4"
+  },
+  "scripts": {
+    "test": "npx babel test.js -o compiler.js",
+    "compiler:package": "npx babel package -d lib",
+    "compiler:preset": "npx babel preset -d es",
+    "compiler": "npm run clean && npm run compiler:package",
+    "clean": "rm -rf lib && rm -rf es",
+    "gulp": "gulp",
+    "debug": "rm -rf dist && nodemon -w . --exec npm run gulp"
+  }
+}
